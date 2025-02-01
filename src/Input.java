@@ -8,11 +8,13 @@ public class Input{
         String name = scanner.nextLine();
 
         System.out.println("Enter your age: ");
-        int age = Integer.parseInt(scanner.nextLine());
-        
+        int age = scanner.nextInt();
+
         System.out.println("Enter your weight: ");
-        double weight = Double.parseDouble(scanner.nextLine());
+        double weight = scanner.nextDouble();
         
+        scanner.nextLine(); // Add this to make sure the next line was 
+
         System.out.println("Are you a smoker? (yes/no): ");
         String response = scanner.nextLine();
         boolean smoker = response.equalsIgnoreCase("yes");
